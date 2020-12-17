@@ -79,8 +79,7 @@
   },
   "dependencies": {},
   "license": "MIT",
-  "bugs": {
-  },
+  "bugs": {},
   "keywords": [
     "react",
     "popup",
@@ -92,5 +91,5 @@
     "reactjs-popup",
     "reactjs-modal",
     "react-tooltip"
-  ],
+  ]
 }
