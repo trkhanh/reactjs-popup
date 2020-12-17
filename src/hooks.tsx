@@ -1,5 +1,4 @@
-import { RefObject, useEffect } from 'react';
-import { EventType } from 'types';
+import { RefObject, useEffect, useLayoutEffect } from 'react';
 
 export const useOnEscape = (handler: () => void, active = true) => {
   useEffect(() => {
@@ -66,3 +65,6 @@ export const useOnClickOutSide = (
     };
   }, [ref, handler, active]);
 };
+
+export const useIsomorphicLayoutEffect =
+  typeof window !== 'undefined' ? useLayoutEffect : useEffect;
